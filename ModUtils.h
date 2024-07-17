@@ -103,8 +103,7 @@ namespace ModUtils
 	{
 		if (!muLogFile.is_open())
 		{
-			CreateDirectoryA(std::string("mods\\" + GetCurrentModName()).c_str(), NULL);
-			muLogFile.open("mods\\" + GetCurrentModName() + "\\log.txt");
+			muLogFile.open(GetCurrentModName() + ".log");
 		}
 	}
 
