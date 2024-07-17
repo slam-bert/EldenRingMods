@@ -103,7 +103,9 @@ namespace ModUtils
 	{
 		if (!muLogFile.is_open())
 		{
-			muLogFile.open(GetCurrentModName() + ".log");
+			TCHAR NPath[MAX_PATH];
+			GetCurrentDirectory(MAX_PATH, NPath);
+			muLogFile.open(std::string(NPath) + GetCurrentModName() + ".log");
 		}
 	}
 
