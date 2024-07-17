@@ -59,7 +59,7 @@ void ShowAntiFlashbangWindow()
 
 void ReadConfigFile()
 {
-	INIFile config(GetModFolderPath() + "\\config.ini");
+	INIFile config("SkipTheIntro.ini");
 	INIStructure ini;
 
 	if (config.read(ini))

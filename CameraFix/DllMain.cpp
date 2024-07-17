@@ -10,7 +10,7 @@ bool disableCameraReset = true;
 
 void ReadConfig()
 {
-	INIFile config(GetModFolderPath() + "\\config.ini");
+	INIFile config("CameraFix.ini");
 	INIStructure ini;
 
 	if (config.read(ini))

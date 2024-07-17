@@ -116,7 +116,7 @@ std::vector<Keybind> TranslateInput(std::string inputString)
 
 void ReadConfig()
 {
-	INIFile config(GetModFolderPath() + "\\pause_keybinds.ini");
+	INIFile config("PauseTheGame.ini");
 	INIStructure ini;
 
 	if (config.read(ini))

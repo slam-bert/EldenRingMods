@@ -99,11 +99,6 @@ namespace ModUtils
 		return currentModName;
 	}
 
-	static std::string GetModFolderPath()
-	{
-		return std::string("mods\\" + GetCurrentModName());
-	}
-
 	static void OpenModLogFile()
 	{
 		if (!muLogFile.is_open())

@@ -10,7 +10,7 @@ static float fpsLimit = 300;
 
 void ReadConfig()
 {
-	INIFile config(GetModFolderPath() + "\\config.ini");
+	INIFile config("UnlockTheFps.ini");
 	INIStructure ini;
 
 	if (config.read(ini))

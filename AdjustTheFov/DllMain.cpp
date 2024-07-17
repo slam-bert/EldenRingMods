@@ -15,7 +15,7 @@ extern "C" {
 
 void ReadConfig()
 {
-	INIFile config(GetModFolderPath() + "\\config.ini");
+	INIFile config("AdjustTheFov.ini");
 	INIStructure ini;
 
 	if (config.read(ini))
